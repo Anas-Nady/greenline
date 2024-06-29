@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+  margin: 50px 0;
+}
+
+.quill .ql-container .ql-editor p {
+  @apply text-lg text-right;
+}
+
+.no-overflow-style::-webkit-scrollbar {
+  display: none;
+}
+
+.no-overflow-style {
+  scrollbar-width: none;
+}
+
+.quill .ql-container.ql-bubble {
+  @apply h-full px-12 !important;
+}
+
+.quill .ql-tooltip {
+  @apply z-50 !important;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+}
+
+@layer utilities {
+  .category-card {
+    @apply shadow rounded cursor-pointer overflow-hidden ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .category-card-overlay {
+    @apply absolute inset-0 bg-gray-500 opacity-50 z-0 transition duration-200 group-hover:bg-gray-700;
+  }
+
+  .category-card-name {
+    @apply w-full px-2 py-4 bg-white text-lg sm:text-xl xl:text-2xl text-green-500 font-semibold text-center;
+  }
+
+  .location-map {
+    @apply relative h-[310px] mt-8 overflow-hidden bg-cover bg-[50%] bg-no-repeat;
+  }
+}
+
+section {
+  @apply mx-2;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+  direction: rtl !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.bg-cassette-type {
+  background-image: url("/assets/cassette-type.png");
+}
+
+.bg-concealed {
+  background-image: url("/assets/concealed.png");
+}
+
+.bg-wall-mounted {
+  background-image: url("/assets/wall-mounted.webp");
+}
