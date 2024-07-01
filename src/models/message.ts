@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import slugify from "slugify";
 import validator from "validator";
 
-const messageSchema = mongoose.Schema(
+const messageSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -13,10 +13,11 @@ const messageSchema = mongoose.Schema(
       type: String,
       required: [true, "Please enter your email."],
       validate: {
-        validator: function (value) {
+        validator: function (value: string) {
           return validator.isEmail(value);
         },
-        message: (props) => `"${props.value}" is not a valid email address.!`,
+        message: (props: any) =>
+          `"${props.value}" is not a valid email address.!`,
       },
     },
     slug: { type: String, required: true },

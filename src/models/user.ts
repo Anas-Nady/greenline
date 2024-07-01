@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import validator from "validator";
 import bcrypt from "bcryptjs";
 
-const userSchema = mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -15,10 +15,10 @@ const userSchema = mongoose.Schema(
       required: true,
       trim: true,
       validate: {
-        validator: function (value) {
+        validator: function (value: string) {
           return validator.isEmail(value);
         },
-        message: (props) => `${props.value} is not a valid email address!`,
+        message: (props: any) => `${props.value} is not a valid email address!`,
       },
     },
     password: {
@@ -44,7 +44,7 @@ userSchema.pre("save", async function (next) {
   next();
 });
 
-userSchema.methods.matchPassword = async function (enteredPassword) {
+userSchema.methods.matchPassword = async function (enteredPassword: string) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
