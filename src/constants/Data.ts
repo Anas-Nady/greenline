@@ -6,4 +6,4 @@ export const COMPANY_LOCATION =
 export const CLIENT_URL =
   process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
-    : "https://greenline-sa.vercel.app";
+    : "https://greenline-ksa.vercel.app";

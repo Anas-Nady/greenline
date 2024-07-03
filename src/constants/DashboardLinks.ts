@@ -3,8 +3,15 @@ import {
   listAllProductsIcon,
   messagesIcon,
   profileIcon,
-} from "./../components/Icons";
-import { DASHBOARD_LINKS } from "./arabic";
+} from "../components/Icons";
+
+const DASHBOARD_LINKS = {
+  ADD_PRODUCT: "إضافة منتج",
+  ALL_PRODUCTS: "المنتجات",
+  MESSAGES: "الرسائل",
+  SETTINGS: "الإعدادات",
+  LOGOUT: "تسجيل الخروج",
+};
 
 export const dashboardLinks = [
   {
