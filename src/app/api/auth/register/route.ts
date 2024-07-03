@@ -3,13 +3,13 @@ import User from "@/models/user";
 import jwt from "jsonwebtoken";
 import { cookies } from "next/headers";
 
-const signToken = (id, isAdmin) => {
-  return jwt.sign({ id, isAdmin }, process.env.JWT_SECRET, {
+const signToken = (id: string, isAdmin: boolean) => {
+  return jwt.sign({ id, isAdmin }, process.env.JWT_SECRET as string, {
     expiresIn: process.env.JWT_EXPIRES_IN,
   });
 };
 
-export const POST = async (request) => {
+export const POST = async (request: Request) => {
   try {
     await connectDB();
 
@@ -41,7 +41,7 @@ export const POST = async (request) => {
     return new Response(JSON.stringify({ user }), {
       status: 200,
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error(error);
     return new Response(JSON.stringify({ message: error.message }), {
       status: 500,
