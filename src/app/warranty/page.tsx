@@ -4,7 +4,7 @@ import {
   WARRANTY,
   WARRANTY_DOCUMENT,
   WARRANTY_PAGE_TITLE,
-} from "@/constants/arabic";
+} from "@/constants/Warranty";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

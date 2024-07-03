@@ -1,4 +1,4 @@
-import { ABOUT_US, ABOUT_US_DESCRIPTIONS } from "@/constants/arabic";
+import { ABOUT_US, ABOUT_US_DESCRIPTIONS } from "@/constants/AboutUs";
 import AboutUs from "@/components/sections/AboutUs";
 import type { Metadata } from "next";
 

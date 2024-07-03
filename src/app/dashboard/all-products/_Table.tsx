@@ -13,9 +13,9 @@ import {
   SAR,
   SEARCH_PLACEHOLDER,
   SELLER,
-} from "@/constants/arabic";
+} from "@/constants/Global";
 import { categoriesOptions } from "@/constants/constants";
-import { PRODUCT_DELETED } from "@/constants/toastArabicMessages";
+import { PRODUCT_DELETED } from "@/constants/ToastArabicMessages";
 import formatPrice from "@/helpers/formatPrice";
 import { getCategoryArabicName } from "@/helpers/getCategoryArbicName";
 import { ProductProps } from "@/types/Product";

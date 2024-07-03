@@ -58,13 +58,14 @@ export default function NavbarBtn({
           isMenuOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="flex me-0 md:me-14 flex-col -mt-9 p-4 gap-4 md:p-0 text-md sm:text-lg md:text-xl xl:text-2xl font-semibold border rounded-lg bg-gray-100 border-gray-200 md:bg-white md:shadow-none md:border-none shadow  md:flex-row md:border-0">
+        <ul className="flex me-0 md:me-14 flex-col -mt-11 p-4 gap-4 md:px-0 text-md sm:text-lg md:text-xl xl:text-2xl font-semibold border rounded-lg bg-gray-100 border-gray-200 md:bg-white md:shadow-none md:border-none shadow md:flex-row md:border-0">
           {links.map((link) => (
             <li key={link.path} onClick={toggleMenu} className="text-start">
               <Link
                 href={`/${link.path}`}
-                className={`block py-2 px-3 md:py-2 md:px-3 rounded-full hover:text-green-500 sm:hover:text-white sm:hover:bg-green-500  duration-300 text-gray-600 ${
-                  pathName.endsWith(link.path) && "bg-green-500 text-white"
+                className={`block py-2 px-3 md:py-2 md:px-4 rounded-full hover:text-green-500 duration-300 text-gray-600 ${
+                  pathName.endsWith(link.path) &&
+                  "bg-green-500 text-white hover:text-white"
                 }  `}
               >
                 {link.name}

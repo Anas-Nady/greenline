@@ -1,4 +1,4 @@
-import { COMPANY_LOCATION } from "@/constants/data";
+import { COMPANY_LOCATION } from "@/constants/Data";
 
 export default function LocationMap() {
   return (

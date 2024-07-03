@@ -3,8 +3,8 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SliderImg from "react-slick";
-import { TESTIMONIALS_RATINGS } from "@/constants/arabic";
 import Card from "./Card";
+import { TESTIMONIALS_RATINGS } from "@/constants/Testimonials";
 
 export default function Slider() {
   const settings = {

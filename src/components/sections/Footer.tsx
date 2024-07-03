@@ -1,8 +1,8 @@
-import { COPY_RIGHT, GREEN_LINE } from "@/constants/arabic";
 import Link from "next/link";
 import logo from "@/assets/imgs/logo/green-line_logo-2.svg";
 import Image from "next/image";
-import { FOOTER_LINKS } from "@/constants/constants";
+import { COPY_RIGHT, FOOTER_LINKS } from "@/constants/Footer";
+import { GREEN_LINE } from "@/constants/Global";
 
 export default function Footer() {
   return (

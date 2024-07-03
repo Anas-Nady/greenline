@@ -8,8 +8,8 @@ import {
   PRICE,
   SAR,
   SOLD_BY,
-} from "@/constants/arabic";
-import { CLIENT_URL, WHATSAPP_NUMBER } from "@/constants/data";
+} from "@/constants/Product";
+import { CLIENT_URL, WHATSAPP_NUMBER } from "@/constants/Data";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -39,7 +39,7 @@ export default function ProductInfo({
     <div className="flex min-h-[calc(100vh-135px)] justify-center flex-col lg:flex-row lg:justify-start items-center lg:items-start gap-5 flex-wrap container py-14">
       <div className="flex-1 p-3">
         <Image
-          className="block object-contain w-[500px] h-[500px] px-[10px]"
+          className="block object-contain border w-[650px] h-[500px] px-[10px]"
           src={currentProductPhoto}
           alt={product.name}
           width="500"

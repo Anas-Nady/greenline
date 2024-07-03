@@ -1,6 +1,6 @@
 "use client";
 
-import { NOT_FOUND_PAGE } from "@/constants/arabic";
+import { NOT_FOUND_PAGE } from "@/constants/Global";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 

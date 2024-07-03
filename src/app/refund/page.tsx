@@ -6,7 +6,7 @@ import {
   REFUND_POLICY_PAGE_TITLE,
   RETURN_POLICY_DOCUMENT,
   RETURN_POLICY_PAGE_TITLE,
-} from "@/constants/arabic";
+} from "@/constants/Refund";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

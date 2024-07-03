@@ -8,12 +8,12 @@ import {
   NEW_EMAIL,
   PASSWORD,
   SAVE_CHANGES,
-} from "@/constants/arabic";
+} from "@/constants/Global";
 import { FormEvent, useState } from "react";
 import {
   EMAIL_AND_PASSWORD_REQUIRED,
   PROFILE_UPDATED,
-} from "@/constants/toastArabicMessages";
+} from "@/constants/ToastArabicMessages";
 
 interface ProfileFormProps {
   email: string;

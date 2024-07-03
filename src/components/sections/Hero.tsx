@@ -1,4 +1,4 @@
-import { HERE_WELCOME_TEXT, SEE_OUT_PRODUCTS } from "@/constants/arabic";
+import { HERE_WELCOME_TEXT, SEE_OUT_PRODUCTS } from "@/constants/Global";
 import Link from "next/link";
 
 export default function Hero() {

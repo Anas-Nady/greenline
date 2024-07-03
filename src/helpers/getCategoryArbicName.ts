@@ -1,4 +1,4 @@
-import { CATEGORIES_OPTIONS } from "@/constants/arabic";
+import { CATEGORIES_OPTIONS } from "@/constants/Categories";
 
 export const getCategoryArabicName = (category: string): string => {
   if (category === "wall-mounted") {

@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Input from "./Input";
 import Textarea from "./Textarea";
 import toast from "react-hot-toast";
-import { EMAIL, MESSAGE, NAME, SEND } from "@/constants/arabic";
-import { MESSAGE_SENDED } from "@/constants/toastArabicMessages";
+import { EMAIL, MESSAGE, NAME, SEND } from "@/constants/Form";
+import { MESSAGE_SENDED } from "@/constants/ToastArabicMessages";
 
 export default function ContactUsForm() {
   const [loading, setLoading] = useState(false);

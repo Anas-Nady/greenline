@@ -2,7 +2,7 @@ import ContactUsForm from "@/components/ContactUs/ContactUsForm";
 import ContactUsInfo from "@/components/ContactUs/ContactUsInfo";
 import LocationMap from "@/components/ContactUs/LocationMap";
 import Headline from "@/components/Headline";
-import { CONTACT_US } from "@/constants/arabic";
+import { CONTACT_US } from "@/constants/ContactUs";
 
 export default function ContactUs() {
   return (

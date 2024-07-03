@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ProductProps } from "@/types/Product";
 import Image from "next/image";
-import { DETAILS, NEW, OUR_PRODUCTS, SAR, SEE_MORE } from "@/constants/arabic";
+import { DETAILS, NEW, OUR_PRODUCTS, SAR, SEE_MORE } from "@/constants/Product";
 import formatPrice from "@/helpers/formatPrice";
 import Headline from "@/components/Headline";
 import DangerouslyHTML from "@/components/DangerouslyHTML";

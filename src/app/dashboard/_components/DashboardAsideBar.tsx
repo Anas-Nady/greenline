@@ -8,9 +8,9 @@ import { dashboardLinks } from "./../../../constants/DashboardLinks";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { signOut } from "next-auth/react";
-import { DASHBOARD_LINKS } from "@/constants/arabic";
+import { DASHBOARD_LINKS } from "@/constants/Global";
 import logout from "@/utils/logout";
-import { LOGOUT_SUCCESS } from "@/constants/toastArabicMessages";
+import { LOGOUT_SUCCESS } from "@/constants/ToastArabicMessages";
 
 export default function DashboardAsideBar() {
   const [isOpen, setIsOpen] = useState(true);

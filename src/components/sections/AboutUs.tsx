@@ -2,7 +2,7 @@ import {
   ABOUT_US,
   ABOUT_US_DESCRIPTIONS,
   LEARN_MORE_ABOUT_US,
-} from "@/constants/arabic";
+} from "@/constants/AboutUs";
 import Headline from "@/components/Headline";
 import Link from "next/link";
 import Image from "next/image";

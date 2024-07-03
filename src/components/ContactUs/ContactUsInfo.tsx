@@ -1,4 +1,4 @@
-import { CONTACT_US_INFO } from "@/constants/constants";
+import { CONTACT_US_INFO } from "@/constants/ContactUs";
 
 export default function ContactUsInfo() {
   return (

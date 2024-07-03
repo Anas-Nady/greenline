@@ -1,11 +1,11 @@
-import { GREEN_LINE } from "@/constants/arabic";
+import { GREEN_LINE } from "@/constants/Global";
 import Image from "next/image";
 import Link from "next/link";
 import NavbarBtn from "./NavbarBtn";
 import { authOptions } from "@/lib/authOptions";
 import { AuthOptions, getServerSession } from "next-auth";
 import logo from "@/assets/imgs/logo/green-line_logo-2.svg";
-import { NavbarLinks } from "@/constants/constants";
+import { NavbarLinks } from "@/constants/Navbar";
 
 export default async function Header() {
   const session = await getServerSession(authOptions as AuthOptions);

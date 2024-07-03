@@ -1,6 +1,6 @@
 "use client";
 
-import { NO_DATA_FOUNDED_HERE_NOW } from "@/constants/arabic";
+import { NO_DATA_FOUNDED_HERE_NOW } from "@/constants/Global";
 
 export default function NotFoundData() {
   return (

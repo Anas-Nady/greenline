@@ -1,6 +1,6 @@
 "use client";
 import { questionMarkIcon } from "@/components/Icons";
-import { FAQS_QUESTIONS } from "@/constants/arabic";
+import { FAQS_QUESTIONS } from "@/constants/Faqs";
 import { useState } from "react";
 
 export default function Accordion() {

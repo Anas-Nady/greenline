@@ -10,8 +10,8 @@ import { Pagination } from "flowbite-react";
 import PopupMessage from "./_PopupMessage";
 import NotFoundData from "@/components/NotFoundData";
 import { HTMLContent } from "@/types/types";
-import { NEXT, PREVIOUS } from "@/constants/arabic";
-import { MESSAGE_DELETED } from "@/constants/toastArabicMessages";
+import { NEXT, PREVIOUS } from "@/constants/Global";
+import { MESSAGE_DELETED } from "@/constants/ToastArabicMessages";
 
 export default function MessageCard() {
   const [loadingDeleteMessage, setLoadingDeleteMessage] = useState(false);

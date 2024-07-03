@@ -1,7 +1,7 @@
 import { ProductProps } from "@/types/Product";
 import ProductInfo from "@/components/products/ProductInfoPage";
 import SimilarProducts from "./_SimilarProducts";
-import { GREEN_LINE } from "@/constants/arabic";
+import { GREEN_LINE } from "@/constants/Global";
 import NotFoundData from "@/components/NotFoundData";
 import { getProductInfo } from "@/utils/requests";
 

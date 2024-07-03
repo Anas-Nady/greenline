@@ -2,7 +2,7 @@
 
 import { whatsappIcon } from "./Icons";
 import { usePathname } from "next/navigation";
-import { WHATSAPP_NUMBER } from "@/constants/data";
+import { WHATSAPP_NUMBER } from "@/constants/Data";
 import Link from "next/link";
 
 const Whatsapp = () => {

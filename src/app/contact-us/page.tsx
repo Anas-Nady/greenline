@@ -1,4 +1,4 @@
-import { CONTACT_US } from "@/constants/arabic";
+import { CONTACT_US } from "@/constants/ContactUs";
 import ContactUs from "@/components/sections/ContactUs";
 import type { Metadata } from "next";
 

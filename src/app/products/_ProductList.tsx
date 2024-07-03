@@ -2,14 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import DangerouslyHTML from "@/components/DangerouslyHTML";
-import {
-  DETAILS,
-  NEW,
-  NEXT,
-  PREVIOUS,
-  SAR,
-  SEARCH_PLACEHOLDER,
-} from "@/constants/arabic";
+import { DETAILS, NEW, SAR, SEARCH_PLACEHOLDER } from "@/constants/Product";
 import { rightArrowIcon, searchIcon } from "@/components/Icons";
 import { ProductProps } from "@/types/Product";
 import formatPrice from "@/helpers/formatPrice";
@@ -18,7 +11,8 @@ import { Pagination } from "flowbite-react";
 import { FormEvent, useEffect, useState } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import toast from "react-hot-toast";
-import { PLEASE_WRITE_SOMETHING } from "@/constants/toastArabicMessages";
+import { PLEASE_WRITE_SOMETHING } from "@/constants/ToastArabicMessages";
+import { NEXT, PREVIOUS } from "@/constants/Global";
 
 export default function ProductList({
   products,

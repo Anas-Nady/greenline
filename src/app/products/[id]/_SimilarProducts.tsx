@@ -1,6 +1,6 @@
 import DangerouslyHTML from "@/components/DangerouslyHTML";
 import { rightArrowIcon } from "@/components/Icons";
-import { DETAILS, NEW, SAR, SIMILAR_PRODUCTS } from "@/constants/arabic";
+import { DETAILS, NEW, SAR, SIMILAR_PRODUCTS } from "@/constants/Product";
 import formatPrice from "@/helpers/formatPrice";
 import { ProductProps } from "@/types/Product";
 import Image from "next/image";

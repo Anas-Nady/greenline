@@ -3,7 +3,7 @@ import {
   MAINTENANCE,
   MAINTENANCE_DOCUMENT,
   MAINTENANCE_PAGE_TITLE,
-} from "@/constants/arabic";
+} from "@/constants/Maintenance";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

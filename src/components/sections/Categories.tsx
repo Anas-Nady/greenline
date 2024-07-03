@@ -1,5 +1,4 @@
-import { CATEGORIES } from "@/constants/arabic";
-import { categoriesOptions } from "@/constants/constants";
+import { CATEGORIES, categoriesOptions } from "@/constants/Categories";
 
 import Headline from "@/components/Headline";
 import Card from "@/components/Categories/Card";

@@ -1,6 +1,6 @@
 "use client";
 
-import { REFRESH_PAGE, SERVER_ERROR_PAGE } from "@/constants/arabic";
+import { REFRESH_PAGE, SERVER_ERROR_PAGE } from "@/constants/Global";
 
 export default function Error({
   error,

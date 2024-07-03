@@ -1,6 +1,6 @@
 "use client";
 
-import { CHOOSE_CATEGORY } from "@/constants/arabic";
+import { CHOOSE_CATEGORY } from "@/constants/Global";
 import { categoriesOptions } from "@/constants/constants";
 import { SelectInputProps } from "@/types/Input";
 

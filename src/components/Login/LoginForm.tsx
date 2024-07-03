@@ -5,8 +5,8 @@ import Input from "./_Input";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { signIn } from "next-auth/react";
-import { EMAIL, PASSWORD, SIGN_IN } from "@/constants/arabic";
-import { INVALID_EMAIL_OR_PASSWORD } from "@/constants/toastArabicMessages";
+import { EMAIL, PASSWORD, SIGN_IN } from "@/constants/Form";
+import { INVALID_EMAIL_OR_PASSWORD } from "@/constants/ToastArabicMessages";
 
 export default function LoginForm() {
   const router = useRouter();

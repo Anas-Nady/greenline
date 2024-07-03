@@ -1,6 +1,6 @@
 import Headline from "@/components/Headline";
 import Slider from "@/components/Testimonials/Slider";
-import { TESTIMONIALS } from "@/constants/arabic";
+import { TESTIMONIALS } from "@/constants/Testimonials";
 
 export default function Testimonials() {
   return (

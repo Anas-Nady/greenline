@@ -7,8 +7,8 @@ import {
   PRICE,
   PRICE_FROM_DOWN_TO_UP,
   PRICE_FROM_UP_TO_DOWN,
-} from "@/constants/arabic";
-import { categoriesOptions } from "@/constants/constants";
+} from "@/constants/Product";
+import { categoriesOptions } from "@/constants/Categories";
 import Checkbox from "./_Checkbox";
 import { useState, useEffect } from "react";
 import { arrowDownIcon, arrowUpIcon, checkedIcon } from "@/components/Icons";

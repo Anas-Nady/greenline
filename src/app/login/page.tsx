@@ -1,6 +1,6 @@
 import Headline from "@/components/Headline";
 import LoginForm from "@/components/Login/LoginForm";
-import { SIGN_IN, SIGN_IN_PAGE } from "@/constants/arabic";
+import { SIGN_IN, SIGN_IN_PAGE } from "@/constants/Form";
 import { authOptions } from "@/lib/authOptions";
 import type { Metadata } from "next";
 import { AuthOptions, getServerSession } from "next-auth";

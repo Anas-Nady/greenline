@@ -1,6 +1,6 @@
-import { FAQS } from "@/constants/arabic";
 import type { Metadata } from "next";
 import Accordion from "./_Accordion";
+import { FAQS } from "@/constants/Faqs";
 
 export const metadata: Metadata = {
   title: FAQS,

@@ -4,7 +4,7 @@ import ProductList from "./_ProductList";
 import Spinner from "@/components/Spinner";
 import { listAllProducts } from "@/utils/requests";
 import type { Metadata } from "next";
-import { PRODUCTS } from "@/constants/arabic";
+import { PRODUCTS } from "@/constants/Product";
 import { SearchParamsProps } from "@/types/types";
 
 export const metadata: Metadata = {
