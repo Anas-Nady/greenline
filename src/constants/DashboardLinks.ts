@@ -5,7 +5,7 @@ import {
   profileIcon,
 } from "../components/Icons";
 
-const DASHBOARD_LINKS = {
+export const DASHBOARD_LINKS = {
   ADD_PRODUCT: "إضافة منتج",
   ALL_PRODUCTS: "المنتجات",
   MESSAGES: "الرسائل",

@@ -1,7 +1,6 @@
 "use client";
 
-import { CHOOSE_CATEGORY } from "@/constants/Global";
-import { categoriesOptions } from "@/constants/constants";
+import { categoriesOptions, CHOOSE_CATEGORY } from "@/constants/Categories";
 import { SelectInputProps } from "@/types/Input";
 
 export default function SelectInput({ labelName, id }: SelectInputProps) {

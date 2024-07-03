@@ -2,19 +2,10 @@
 import { editIcon, searchIcon, trashIcon } from "@/components/Icons";
 import NotFoundData from "@/components/NotFoundData";
 import Spinner from "@/components/Spinner";
-import {
-  CATEGORIES_OPTIONS,
-  CATEGORY,
-  NEXT,
-  OPTIONS,
-  PREVIOUS,
-  PRICE,
-  PRODUCT_NAME,
-  SAR,
-  SEARCH_PLACEHOLDER,
-  SELLER,
-} from "@/constants/Global";
-import { categoriesOptions } from "@/constants/constants";
+import { CATEGORIES_OPTIONS, categoriesOptions } from "@/constants/Categories";
+import { PRODUCT_NAME, SELLER } from "@/constants/Form";
+import { NEXT, OPTIONS, PREVIOUS } from "@/constants/Global";
+import { CATEGORY, PRICE, SAR, SEARCH_PLACEHOLDER } from "@/constants/Product";
 import { PRODUCT_DELETED } from "@/constants/ToastArabicMessages";
 import formatPrice from "@/helpers/formatPrice";
 import { getCategoryArabicName } from "@/helpers/getCategoryArbicName";
@@ -141,29 +132,17 @@ export default function Table() {
                     {PRODUCT_NAME}
                   </th>
                   <th scope="col" className="px-6 py-3 text-xl font-semibold">
-                    <div className="flex items-center">
-                      {SELLER}
-                      {/* <button>{topAndBottomArrowIcon}</button> */}
-                    </div>
+                    <div className="flex items-center">{SELLER}</div>
                   </th>
                   <th scope="col" className="px-6 py-3 text-xl font-semibold">
-                    <div className="flex items-center">
-                      {CATEGORY}
-                      {/* <button>{topAndBottomArrowIcon}</button> */}
-                    </div>
+                    <div className="flex items-center">{CATEGORY}</div>
                   </th>
                   <th scope="col" className="px-6 py-3 text-xl font-semibold">
-                    <div className="flex items-center">
-                      {PRICE}
-                      {/* <button>{topAndBottomArrowIcon}</button> */}
-                    </div>
+                    <div className="flex items-center">{PRICE}</div>
                   </th>
                   <th scope="col" className="px-6 py-3 text-xl font-semibold">
                     <span className="sr-only">Edit</span>
-                    <div className="flex items-center">
-                      {OPTIONS}
-                      {/* <button>{topAndBottomArrowIcon}</button> */}
-                    </div>
+                    <div className="flex items-center">{OPTIONS}</div>
                   </th>
                 </tr>
               </thead>

@@ -3,17 +3,17 @@ import toast from "react-hot-toast";
 import Input from "./_Input";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import {
-  CURRENT_EMAIL,
-  NEW_EMAIL,
-  PASSWORD,
-  SAVE_CHANGES,
-} from "@/constants/Global";
 import { FormEvent, useState } from "react";
 import {
   EMAIL_AND_PASSWORD_REQUIRED,
   PROFILE_UPDATED,
 } from "@/constants/ToastArabicMessages";
+import {
+  CURRENT_EMAIL,
+  NEW_EMAIL,
+  PASSWORD,
+  SAVE_CHANGES,
+} from "@/constants/Form";
 
 interface ProfileFormProps {
   email: string;

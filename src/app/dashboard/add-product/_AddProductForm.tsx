@@ -13,16 +13,16 @@ import {
 } from "@/constants/ToastArabicMessages";
 import {
   SAVE_PRODUCT,
-  CHOOSE_CATEGORY,
-  GREEN_LINE,
   IMAGES,
   MAIN_PHOTO,
   NAME,
   OLD_PRICE,
-  PRICE,
-  PRODUCT_IS_NEW,
   SELLER,
-} from "@/constants/Global";
+  IS_PRODUCT_NEW,
+} from "@/constants/Form";
+import { PRICE } from "@/constants/Product";
+import { GREEN_LINE } from "@/constants/Global";
+import { CHOOSE_CATEGORY } from "@/constants/Categories";
 
 export default function AddProductForm() {
   const [description, setDescription] = useState("");

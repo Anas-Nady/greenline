@@ -6,15 +6,15 @@ import Spinner from "@/components/Spinner";
 import { ProductProps } from "@/types/Product";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import { PRODUCT_UPDATED } from "@/constants/ToastArabicMessages";
 import {
+  IS_PRODUCT_NEW,
   NAME,
   OLD_PRICE,
-  PRICE,
-  PRODUCT_IS_NEW,
   SAVE_CHANGES,
   SELLER,
-} from "@/constants/Global";
-import { PRODUCT_UPDATED } from "@/constants/ToastArabicMessages";
+} from "@/constants/Form";
+import { PRICE } from "@/constants/Product";
 
 export default function EditProductForm({ slug: id }: { slug: string }) {
   const [productIsNew, setProductIsNew] = useState(false);
