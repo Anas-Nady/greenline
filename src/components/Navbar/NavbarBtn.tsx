@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { menuIcon, whatsappIcon } from "../Icons";
 import { userIcon } from "@/app/dashboard/_components/Icons";
 import { usePathname, useRouter } from "next/navigation";

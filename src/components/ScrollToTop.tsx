@@ -1,6 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { topArrowIcon } from "./Icons";
 
 const ScrollToTop = () => {

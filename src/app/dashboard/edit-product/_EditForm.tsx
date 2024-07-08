@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import Input from "./_Input";
 import Spinner from "@/components/Spinner";
 import { ProductProps } from "@/types/Product";

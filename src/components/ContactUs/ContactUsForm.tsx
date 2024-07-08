@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Input from "./Input";
 import Textarea from "./Textarea";
 import toast from "react-hot-toast";
