@@ -21,7 +21,6 @@ export const GET = async () => {
       status: 200,
     });
   } catch (error: any) {
-    console.error(error);
     return new Response(
       JSON.stringify({
         message: error.message,
@@ -60,7 +59,6 @@ export const PUT = async (request: Request) => {
       { status: 200 }
     );
   } catch (error: any) {
-    console.error(error);
     return new Response(
       JSON.stringify({
         message: error.message,

@@ -80,7 +80,6 @@ export const POST = async (request: Request) => {
 
     return new Response(JSON.stringify(newMessage), { status: 201 });
   } catch (error: any) {
-    console.error(error);
     return new Response(
       JSON.stringify({
         message: error.message,

@@ -40,7 +40,6 @@ export const GET = async (
       status: 200,
     });
   } catch (error: any) {
-    console.error(error);
     return new Response(JSON.stringify({ message: error.message }), {
       status: 500,
     });
@@ -92,7 +91,6 @@ export const PUT = async (
       { status: 200 }
     );
   } catch (error: any) {
-    console.error(error);
     return new Response(
       JSON.stringify({ message: "An error occurred", error: error.message }),
       { status: 500 }

@@ -81,7 +81,6 @@ export default function MessageCard() {
         toast.error(data.message);
       }
     } catch (error: any) {
-      console.error(error);
       toast.error(error.message);
     } finally {
       setLoadingDeleteMessage(false);

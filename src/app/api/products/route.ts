@@ -80,7 +80,6 @@ export const GET = async (request: Request): Promise<Response> => {
       { status: 200 }
     );
   } catch (error: any) {
-    console.error(error);
     return new Response(
       JSON.stringify({ message: "An error occurred.", error: error?.message }),
       { status: 500 }

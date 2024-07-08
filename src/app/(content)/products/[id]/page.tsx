@@ -77,7 +77,6 @@ export default async function ProductPage({
     similarProducts = data?.similarProducts;
     productInfo = data?.product;
   } catch (error) {
-    console.error(error);
     error = true;
   }
 

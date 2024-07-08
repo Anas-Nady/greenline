@@ -12,7 +12,7 @@ import { getCategoryArabicName } from "@/helpers/getCategoryArbicName";
 import { ProductProps } from "@/types/Product";
 import { Pagination } from "flowbite-react";
 import Link from "next/link";
-import React, { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
 export default function Table() {
@@ -40,7 +40,6 @@ export default function Table() {
 
       if (res.ok) {
         const data = await res.json();
-        console.log(data.products);
         setProducts(data.products);
         setPagination(data.pagination);
       }

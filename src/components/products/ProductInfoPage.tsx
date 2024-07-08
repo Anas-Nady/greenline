@@ -11,7 +11,7 @@ import {
 } from "@/constants/Product";
 import { CLIENT_URL, WHATSAPP_NUMBER } from "@/constants/Data";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import formatPrice from "@/helpers/formatPrice";
 import { whatsappIcon } from "../Icons";
@@ -32,8 +32,6 @@ export default function ProductInfo({
   };
 
   const pageURL = `${CLIENT_URL}/products/${product._id}`;
-
-  console.log(pageURL);
 
   return (
     <div className="flex min-h-[calc(100vh-135px)] justify-center flex-col lg:flex-row lg:justify-start items-center lg:items-start gap-5 flex-wrap container py-14">

@@ -20,8 +20,6 @@ export default function AuthenticationLayout({
         cache: "no-store",
       });
 
-      console.log(res);
-
       if (res.status === 200) {
         setLoading(false);
       } else {

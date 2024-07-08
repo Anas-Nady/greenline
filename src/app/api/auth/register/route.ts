@@ -15,10 +15,7 @@ export const POST = async (request: Request) => {
 
     const { name, email, password } = await request.json();
 
-    console.log(name, email, password);
-
     const user = await User.create({ name, email, password });
-    console.log(user);
 
     if (!user) {
       return new Response(
@@ -42,7 +39,6 @@ export const POST = async (request: Request) => {
       status: 200,
     });
   } catch (error: any) {
-    console.error(error);
     return new Response(JSON.stringify({ message: error.message }), {
       status: 500,
     });

@@ -55,7 +55,6 @@ export default function ProfileForm({ email }: ProfileFormProps) {
         toast.error(data.message);
       }
     } catch (error: any) {
-      console.error(error);
       toast.error(error.message);
     } finally {
       setLoading(false);
