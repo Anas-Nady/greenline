@@ -1,6 +1,6 @@
 import Product from "@/models/product";
 import path from "path";
-import { writeFile } from "fs/promises";
+import { mkdir, writeFile } from "fs/promises";
 import authenticateUser from "@/utils/authenticateUser";
 import { cookies } from "next/headers";
 
@@ -31,11 +31,6 @@ export const POST = async (req: Request) => {
     );
   }
 
-  const photoBuffer = Buffer.from(await photo.arrayBuffer());
-  const photoFileName = photo.name.replaceAll(" ", "_");
-  const photoPath = path.join("public/uploads", photoFileName);
-  const publicPhotoPath = `/uploads/${photoFileName}`;
-
   try {
     const isAuthenticated = await authenticateUser(token);
 
@@ -45,6 +40,12 @@ export const POST = async (req: Request) => {
         { status: isAuthenticated.status }
       );
     }
+    await mkdir("public/uploads", { recursive: true });
+
+    const photoBuffer = Buffer.from(await photo.arrayBuffer());
+    const photoFileName = photo.name.replaceAll(" ", "_");
+    const photoPath = path.join("public/uploads", photoFileName);
+    const publicPhotoPath = `/uploads/${photoFileName}`;
 
     await writeFile(photoPath, photoBuffer);
 
