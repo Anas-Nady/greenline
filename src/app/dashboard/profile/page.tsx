@@ -6,8 +6,8 @@ export default async function Profile() {
   const session = await getServerSession(authOptions as AuthOptions);
 
   return (
-    <div>
+    <main>
       <ProfileForm email={session?.user?.email || ""} />
-    </div>
+    </main>
   );
 }
