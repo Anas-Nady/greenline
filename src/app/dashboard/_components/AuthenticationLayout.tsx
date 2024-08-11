@@ -17,7 +17,7 @@ export default function AuthenticationLayout({
       setLoading(true);
       const res = await fetch("/api/auth/profile", {
         method: "GET",
-        cache: "no-store",
+        next: { revalidate: 0 },
       });
 
       if (res.status === 200) {

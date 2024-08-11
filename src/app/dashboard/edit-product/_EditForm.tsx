@@ -37,7 +37,7 @@ export default function EditProductForm({ slug: id }: { slug: string }) {
     try {
       const res = await fetch(`/api/products/${id}`, {
         method: "GET",
-        cache: "no-store",
+        next: { revalidate: 0 },
       });
 
       if (res.ok && res.status === 200) {

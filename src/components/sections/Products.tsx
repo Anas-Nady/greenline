@@ -13,7 +13,7 @@ export default async function Products() {
   try {
     const res = await fetch(
       `${process.env.ENDPOINT_API}/products?topViews=true&limit=3`,
-      { cache: "no-store" }
+      { next: { revalidate: 0 } }
     );
     const data = await res.json();
 

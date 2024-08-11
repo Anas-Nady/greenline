@@ -35,7 +35,7 @@ export default function Table() {
       setLoadingProducts(true);
       const res = await fetch(
         `/api/products?page=${pagination.currentPage}&category=${category}&search=${search}&fields=_id,name,price,seller,category`,
-        { cache: "no-store" }
+        { next: { revalidate: 0 } }
       );
 
       if (res.ok) {

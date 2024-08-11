@@ -14,7 +14,7 @@ export const listAllProducts = async ({
   try {
     const res = await fetch(
       `${API_ENDPOINT}/products?limit=${limit}&sort=${sort}&search=${search}&minPrice=${minPrice}&maxPrice=${maxPrice}&page=${page}&category=${category}`,
-      { cache: "no-store" }
+      { next: { revalidate: 0 } }
     );
 
     if (res.ok) {
