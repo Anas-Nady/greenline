@@ -6,8 +6,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Whatsapp from "@/components/Whatsapp";
 import { AuthProvider } from "@/contexts/AuthProvider";
 import Header from "@/components/Navbar/Header";
-import Footer from "@/components/sections/Footer";
 import rootMetadata from "./_rootMetadata";
+import Footer from "@/components/sections/Footer";
 
 const arabicFont = Noto_Naskh_Arabic({
   subsets: ["arabic"],
@@ -15,7 +15,6 @@ const arabicFont = Noto_Naskh_Arabic({
 });
 
 export const metadata: Metadata = rootMetadata;
-export const fetchCache = "default-no-store";
 
 export default function Layout({
   children,
@@ -27,7 +26,7 @@ export default function Layout({
       <body className={`${arabicFont.className} bg-root-layout`} dir="rtl">
         <AuthProvider>
           <Header />
-          <main className="min-h-[calc(100vh-135px)]">{children}</main>
+          <div className="min-h-[calc(100vh-135px)]">{children}</div>
           <Footer />
           <ToastLayout />
           <ScrollToTop />
