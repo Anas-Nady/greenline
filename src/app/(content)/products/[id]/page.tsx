@@ -81,7 +81,7 @@ export default async function ProductPage({
   }
 
   return (
-    <main className={`bg-white border-t-2 border-gray-200`}>
+    <div className={`bg-white border-t-2 border-gray-200`}>
       <div className="containers">
         {!error && <ProductInfo product={productInfo} isDashboard={false} />}
         {similarProducts?.length >= 4 && !error && (
@@ -89,6 +89,6 @@ export default async function ProductPage({
         )}
         {error && <NotFoundData />}
       </div>
-    </main>
+    </div>
   );
 }

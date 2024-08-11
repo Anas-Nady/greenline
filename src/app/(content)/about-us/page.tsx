@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AboutUsPage() {
   return (
-    <section className="container">
+    <main>
       <AboutUs isSection={false} />
       <div className="w-full shadow-md rounded text-gray-600 text-lg bg-white mt-2 px-6 py-6">
         {ABOUT_US_DESCRIPTIONS.DESCRIPTION_THERE}
@@ -16,6 +16,6 @@ export default function AboutUsPage() {
       <div className="w-full shadow-md rounded text-gray-600 text-lg bg-white mt-2 px-6 py-6">
         {ABOUT_US_DESCRIPTIONS.DESCRIPTION_FOUR}
       </div>
-    </section>
+    </main>
   );
 }

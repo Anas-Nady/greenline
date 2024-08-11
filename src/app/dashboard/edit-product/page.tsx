@@ -6,8 +6,8 @@ export default function page({
   searchParams: { slug: string };
 }) {
   return (
-    <div>
+    <main>
       <EditProductForm slug={searchParams.slug} />
-    </div>
+    </main>
   );
 }

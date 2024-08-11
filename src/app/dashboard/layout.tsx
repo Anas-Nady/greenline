@@ -15,12 +15,12 @@ export default async function DashboardLayout({
   else {
     return (
       <AuthenticationLayout>
-        <main
+        <div
           className={`flex gap-5 h-[calc(100vh -135px)] border-b-2 border-gray-200`}
         >
           <DashboardAsideBar />
           <div className="bg-white flex-1 p-5">{children}</div>
-        </main>
+        </div>
       </AuthenticationLayout>
     );
   }

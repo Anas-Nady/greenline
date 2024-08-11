@@ -2,8 +2,8 @@ import AddProductForm from "./_AddProductForm";
 
 export default function AddProduct() {
   return (
-    <div className="flex my-2">
+    <main className="flex my-2">
       <AddProductForm />
-    </div>
+    </main>
   );
 }

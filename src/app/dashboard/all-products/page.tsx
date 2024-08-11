@@ -2,8 +2,8 @@ import Table from "./_Table";
 
 export default function ListProducts() {
   return (
-    <div>
+    <main>
       <Table />
-    </div>
+    </main>
   );
 }
