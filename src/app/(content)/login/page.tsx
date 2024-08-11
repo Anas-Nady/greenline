@@ -1,5 +1,5 @@
 import Headline from "@/components/Headline";
-import LoginForm from "@/components/Login/LoginForm";
+import LoginForm from "./_Form";
 import { SIGN_IN, SIGN_IN_PAGE } from "@/constants/Form";
 import { authOptions } from "@/lib/authOptions";
 import type { Metadata } from "next";
@@ -16,7 +16,7 @@ export default async function LoginPage() {
   if (session) return redirect("/dashboard/add-product");
   else {
     return (
-      <div className="h-[calc(100vh-65px)] gird grid-cols-1 place-content-center mx-5">
+      <div className="gird grid-cols-1 place-content-center mx-5 my-9">
         <div className="bg-white rounded shadow py-10 px-5 max-w-screen-sm mx-auto">
           <Headline text={SIGN_IN_PAGE} isCentering={true} />
           <LoginForm />
