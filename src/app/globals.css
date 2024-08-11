@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+main {
+  @apply container;
+}
+
 section {
   margin: 50px 0;
 }
@@ -36,22 +40,20 @@ section {
   max-height: 500px;
 }
 
-@layer utilities {
-  .category-card {
-    @apply shadow rounded cursor-pointer overflow-hidden ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1;
-  }
+.category-card {
+  @apply shadow rounded cursor-pointer overflow-hidden ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1;
+}
 
-  .category-card-overlay {
-    @apply absolute inset-0 bg-gray-500 opacity-50 z-0 transition duration-200 group-hover:bg-gray-700;
-  }
+.category-card-overlay {
+  @apply absolute inset-0 bg-gray-500 opacity-50 z-0 transition duration-200 group-hover:bg-gray-700;
+}
 
-  .category-card-name {
-    @apply w-full px-2 py-4 bg-white text-lg sm:text-xl xl:text-2xl text-green-500 font-semibold text-center;
-  }
+.category-card-name {
+  @apply w-full px-2 py-4 bg-white text-lg sm:text-xl xl:text-2xl text-green-500 font-semibold text-center;
+}
 
-  .location-map {
-    @apply relative h-[310px] mt-8 overflow-hidden bg-cover bg-[50%] bg-no-repeat;
-  }
+.location-map {
+  @apply relative h-[310px] mt-8 overflow-hidden bg-cover bg-[50%] bg-no-repeat;
 }
 
 section {
