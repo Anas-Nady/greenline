@@ -82,7 +82,7 @@ export default async function ProductPage({
 
   return (
     <div className={`bg-white border-t-2 border-gray-200`}>
-      <div className="containers">
+      <div className="containers relative">
         {!error && <ProductInfo product={productInfo} isDashboard={false} />}
         {similarProducts?.length >= 4 && !error && (
           <SimilarProducts products={similarProducts} />

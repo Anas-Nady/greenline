@@ -189,7 +189,7 @@ export const leftArrowIcon = (
 
 export const closePopupIcon = (
   <svg
-    className="w-full"
+    className="w-full h-full"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 14 14"
