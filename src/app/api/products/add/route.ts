@@ -41,7 +41,7 @@ export const POST = async (req: Request) => {
       );
     }
 
-    const photoBuffer = Buffer.from(await photo.arrayBuffer());
+    const photoBuffer: any = Buffer.from(await photo.arrayBuffer());
     const photoFileName = photo.name.replaceAll(" ", "_");
     const photoPath = path.join("public/uploads", photoFileName);
     const publicPhotoPath = `/uploads/${photoFileName}`;
@@ -50,7 +50,7 @@ export const POST = async (req: Request) => {
 
     const imagesArray = [];
     for (const image of images) {
-      const imageBuffer = Buffer.from(await image.arrayBuffer());
+      const imageBuffer: any = Buffer.from(await image.arrayBuffer());
       const imageFileName = image.name.replaceAll(" ", "_");
       const imagePath = path.join("public/uploads", imageFileName);
       const publicImagePath = `/uploads/${imageFileName}`;
