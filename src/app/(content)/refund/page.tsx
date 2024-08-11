@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Refund() {
   return (
-    <main className={`my-14 container`}>
+    <main className="my-14">
       <div className="bg-white shadow-lg rounded border border-gray-100 py-8 px-6 mx-5">
         <h1 className="text-xl pb-2 border-b-2 border-green-300 w-fit mx-auto sm:text-2xl lg:text-3xl xl:text-4xl font-semibold">
           {REFUND_AND_RETURN_PAGE_TITLE}

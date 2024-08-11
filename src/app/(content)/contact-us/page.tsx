@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function ContactUsPage() {
   return (
-    <main className="container">
+    <main>
       <ContactUs />
     </main>
   );

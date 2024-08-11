@@ -50,7 +50,7 @@ export default async function ProductsPage({
   }
 
   return (
-    <main className="flex gap-5 flex-col sm:flex-row container my-5">
+    <main className="flex gap-5 flex-col sm:flex-row my-5">
       <FilterOptions categoryCounts={categoryCounts} />
       <div>
         {loading && <Spinner loading={loading} />}

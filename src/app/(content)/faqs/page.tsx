@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Faqs() {
   return (
-    <main className={`my-9 container`}>
+    <main className="my-9">
       <h1 className="text-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
         {FAQS}
       </h1>
