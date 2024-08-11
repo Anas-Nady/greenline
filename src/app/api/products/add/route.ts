@@ -1,6 +1,6 @@
 import Product from "@/models/product";
 import path from "path";
-import { mkdir, writeFile } from "fs/promises";
+import { writeFile } from "fs/promises";
 import authenticateUser from "@/utils/authenticateUser";
 import { cookies } from "next/headers";
 
@@ -40,7 +40,6 @@ export const POST = async (req: Request) => {
         { status: isAuthenticated.status }
       );
     }
-    await mkdir("public/uploads", { recursive: true });
 
     const photoBuffer = Buffer.from(await photo.arrayBuffer());
     const photoFileName = photo.name.replaceAll(" ", "_");
