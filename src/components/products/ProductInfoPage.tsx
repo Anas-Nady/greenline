@@ -49,7 +49,7 @@ export default function ProductInfo({
   return (
     <>
       {viewProductPhoto && (
-        <div className="absolute w-full h-full mx-5 bg-white z-40 pb-5">
+        <div className="absolute w-full h-[90%] mx-5 bg-white z-40 pb-5">
           <span
             onClick={() => setViewProductPhoto(false)}
             className="absolute top-1 left-9 font-bold text-xl text-red-500 hover:bg-white border border-gray-400 hover:border-gray-300 duration-200 bg-gray-200 rounded-full w-11 h-11 mx-auto text-center py-3 cursor-pointer"
